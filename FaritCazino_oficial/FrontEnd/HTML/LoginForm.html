@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../Styles/login.css">
+
+</head>
+<body>
+
+    <div class="ring">
+        <img class="animate__img" src="../Images/Login_animation.png">
+    </div>
+
+<div class="login-container">
+    <h2>Регистрация</h2>
+    <form method="POST" action="register.php" id="loginForm">
+        <input type="text" name="username" placeholder="Введите логин" required>
+        <input type="password" name="password" placeholder="Введите пароль" required>
+        <button type="submit">Регистрация</button>
+        <button class="Enter" type="button" onclick="GoToHtml()">Вход</button>
+
+
+    </form>
+</div>
+
+ <script src="../Script/asd.js"></script>
+
+<script>
+
+    function GoToHtml(){
+        window.location.href = 'LogIn.html';
+    }
+
+</script>
+
+
+</body>
+</html>

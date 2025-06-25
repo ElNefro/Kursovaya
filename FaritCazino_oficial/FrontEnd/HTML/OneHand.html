@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Однорукий бандит</title>
+    <link rel="stylesheet" href="../Styles/oneHand.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="Home.html" class="logo">
+        <h1>FaritCazino</h1>
+        <img src="../Images/Logotype.png" alt="Logotype" class="logo__image">
+    </a>
+    
+    <div class="account">
+        <div class="score">
+            <img class="score__img" src="../Images/FaritCoin.png" alt="Счет"> <!-- Замените на путь к вашему изображению -->
+            <span class="score__text">2500</span> <!-- Здесь вы можете указать динамично обновляемый счет -->
+        </div>
+        <button class="account__btn" onclick="togglePopup()">Личный кабинет</button>
+    </div>
+</header>
+
+<div id="popup" class="popup">
+    <div class="popup__content">
+        <span class="popup__close" onclick="togglePopup()">
+            <script src="../Script/togglePopup.js"></script>
+            &times;
+        </span>
+        <h2 class="popup__title">Личный кабинет</h2>
+        <div class="popup__body">
+            <div class="popup__item">
+                Имя пользователя:
+                <span>username</span>
+            </div>
+            <div class="popup__item">
+                Балланс:
+                <span>2500</span>
+            </div>
+            <div class="popup__item">
+                Место в рейтинге:
+                <span>1</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h1>Однорукий бандит</h1>
+    <div class="slot-machine">
+         <div class="slot" id="slot1">?</div>
+         <div class="slot" id="slot2">?</div>
+         <div class="slot" id="slot3">?</div>
+    </div>
+    <button id="spin">Крутить</button>
+    <div class="result" id="result">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup()">
+                <script src="../Script/togglePopup.js"></script>
+                &times;
+            </span>
+            <h2>Личный кабинет</h2>
+            <form>
+                <label for="username">Имя пользователя: username</label><br>
+                <label for="username">Балланс: 2500</label><br>
+                <label for="username">Место в рейтинге: 1</label><br>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="../Script/OneHand.js"></script>
+
+
+</body>
+</html>

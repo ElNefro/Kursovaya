@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaritCazino</title>
+    <link rel="stylesheet" href="../Styles/home.css">
+</head>
+<body>
+
+<header>
+    <h1>FaritCazino</h1>
+    <img src="../Images/Logotype.png" alt="Logotype">
+    <div class="account">
+
+        <div class="score-display" style="display: flex; align-items: center;">
+            <img src="../Images/Balans.png" alt="Счет" width="50" height="50" style="margin-right: 10px;"> 
+            <span style="font-size: 1.2em;">2500</span> 
+        
+        </div>
+        <div class="corner-button">
+            <button class="button" onclick="togglePopup()">Личный кабинет</button>
+        </div>
+    </div>
+</header>
+     
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="togglePopup()">
+            <script src="../Script/togglePopup.js"></script>
+            &times;
+        </span>
+        <h2>Личный кабинет</h2>
+        <form>
+            <label for="username">Имя пользователя: username</label><br>
+            <label for="username">Балланс: 2500</label><br>
+            <label for="username">Место в рейтинге: 1</label><br>
+
+
+        </form>
+    </div>
+</div> 
+
+<div class="content">
+    <div class="leaderboard">
+        <h2>Таблица лидеров</h2>
+        <table>
+            <tr>
+                <th>Ник:</th>
+                <th>Балланс:</th>
+            </tr>
+            <tr>
+                <td>Игрок1</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Игрок2</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Игрок3</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Игрок4</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Игрок5</td>
+                <td>800</td>
+            </tr>
+        </table>
+    </div>
+    <div class="game-info">
+
+        <section>
+        </div>
+        <a href="../HTML/OneHand.html" class="game-card">
+
+            <img src="https://via.placeholder.com/200x100">
+            <h3>Однорукий бандит</h3>
+
+
+        </a>
+        
+        <a href="Roulet.html" class="game-card">
+
+            <img src="https://via.placeholder.com/200x100">
+            <h3>В разработке</h3>
+
+
+        </a>
+        
+        <a href="Roulet.html" class="game-card">
+
+            <img src="https://via.placeholder.com/200x100">
+            <h3>В разработке</h3>
+
+        </a>
+
+        </section>
+
+    </div>
+
+</div>
+
+<div id="contact-info" class="contact-info">
+    <h2>Информация</h2>
+    <p>Создатели:</p>
+    <p>Андрей Бижов, Ян Сагадеев, Артем Кожевников</p>
+</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РУЛЕТКА</title>
+    <link rel="stylesheet" href="../Styles/roulet.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="Home.html" class="logo">
+        <h1>FaritCazino</h1>
+        <img src="../Images/Logotype.png" alt="Logotype" class="logo__image">
+    </a>
+    
+    <div class="account">
+        <div class="score">
+            <img class="score__img" src="../Images/Balans.png" alt="Счет">
+            <span class="score__text">2500</span> 
+        </div>
+        <button class="account__btn" onclick="togglePopup()">Личный кабинет</button>
+    </div>
+</header>
+
+<div id="popup" class="popup">
+    <div class="popup__content">
+        <span class="popup__close" onclick="togglePopup()">&times;</span>
+        <h2 class="popup__title">Личный кабинет</h2>
+        <div class="popup__body">
+            <div class="popup__item">
+                Имя пользователя:
+                <span>username</span>
+            </div>
+            <div class="popup__item">
+                Балланс:
+                <span>2500</span>
+            </div>
+            <div class="popup__item">
+                Место в рейтинге:
+                <span>1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="poni">
+    <img class="poni__gif" src="../Images/Poni.gif">
+    <div class="poni__content">
+        Программист в туалете
+    </div>
+</div>
+
+<!-- <a class="backToHome" href="../HTML/Home.html">
+    Вернуться на главную
+</a> -->
+
+<div class="aud">
+    <audio src="../Audio/aud.ogg" autoplay loop></audio>
+</div>
+
+
+
+</body>
+</html>
