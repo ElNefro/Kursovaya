@@ -16,16 +16,16 @@
     }
 
     // Проверяем, были ли отправлены данные через POST
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // Получаем данные из формы
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
         // Хешируем пароль перед сохранением в базу данных
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Формируем SQL-запрос для вставки данных
-        $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO Users (Username, PasswordHash) VALUES (?, ?)");
         $stmt->bind_param("ss", $username, $hashed_password);
 
         // Выполняем запрос

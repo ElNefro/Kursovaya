@@ -1,5 +1,4 @@
 CREATE DATABASE CasinoEmulator;
-GO
 
 USE CasinoEmulator;
 GO
@@ -7,9 +6,8 @@ GO
 -- ������� �������������
 CREATE TABLE Users (
     UserID INT IDENTITY(1,1) PRIMARY KEY,
-    Username NVARCHAR(50) NOT NULL UNIQUE,
-    PasswordHash NVARCHAR(255) NOT NULL,
-    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Username NVARCHAR(50) NOT NULL UNIQUE DEFAULT '',
+    PasswordHash NVARCHAR(255) NOT NULL        ,
     Balance DECIMAL(18, 2) NOT NULL DEFAULT 0.00,
     CreatedAt DATETIME2 DEFAULT SYSUTCDATETIME()
 );
